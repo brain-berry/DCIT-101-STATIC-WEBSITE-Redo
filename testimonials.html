@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Voices | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .quotes-container { display: flex; flex-direction: column; gap: 2rem; margin: 3rem auto; max-width: 900px; }
+        .quote-bubble { background: var(--bg-color); border-left: 5px solid var(--accent-color); padding: 2rem; border-radius: 0 var(--radius) var(--radius) 0; box-shadow: var(--shadow); font-style: italic; font-size: 1.2rem; position: relative; }
+        .quote-bubble::before { content: "\201C"; font-size: 5rem; color: var(--border-color); position: absolute; top: -10px; left: 10px; opacity: 0.3; }
+        .quote-author { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+        .quote-author img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .author-info h5 { margin: 0; color: var(--text-main); font-size: 1rem; }
+        .author-info p { margin: 0; color: var(--text-muted); font-size: 0.85rem; font-style: normal; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Candid, ultra-realistic wide shot of diverse students laughing and walking across the vibrant campus green area during autumn. High contrast, warm, glowing, highly cinematic. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Student Voices</h2>
+            <p class="subtitle">Don't just take our word for it—listen to the incredibly talented minds currently shaping our campus community.</p>
+        </section>
+
+        <section class="quotes-container">
+            <div class="quote-bubble">
+                "The shift from a traditional high school to DUC was breathtaking. Here, you are not punished for breaking the mold; you are celebrated. The PhD students frequently mentor undergraduates, which creates this insanely supportive, cross-generational creative loop."
+                <div class="quote-author">
+                    <!-- IMAGE CONCEPT: Bright, smiling portrait of a young male student in a graphic tee. -->
+                    <img src="https://via.placeholder.com/50" alt="Student 1">
+                    <div class="author-info">
+                        <h5>James Lee</h5>
+                        <p>Junior, 3D Animation & VFX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-bubble">
+                "When I came to my first campus tour, I saw a dance major collaborating with an architecture major on a massive immersive installation. Right then, I knew this was home. DUC practically forces you to expand your creative horizons."
+                <div class="quote-author">
+                    <!-- IMAGE CONCEPT: Confident, edgy female student with stylish glasses and a beanie. -->
+                    <img src="https://via.placeholder.com/50" alt="Student 2">
+                    <div class="author-info">
+                        <h5>Aisha Nwosu</h5>
+                        <p>Sophomore, Contemporary Dance</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-bubble">
+                "The scholarships here made my education possible. The Global Visionary package covered my tuition, but more importantly, it connected me with a network of artists from 40 different countries. My art has become completely globalized in its message."
+                <div class="quote-author">
+                    <!-- IMAGE CONCEPT: Thoughtful male student holding a sketchbook. -->
+                    <img src="https://via.placeholder.com/50" alt="Student 3">
+                    <div class="author-info">
+                        <h5>Diego Fernandez</h5>
+                        <p>Senior, Fine Arts & Sculpting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

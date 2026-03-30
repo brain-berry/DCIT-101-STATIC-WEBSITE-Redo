@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs & Courses | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .course-card { background: var(--surface-color); padding: 2rem; border-radius: var(--radius); border: 2px solid transparent; transition: all 0.3s ease; box-shadow: var(--shadow); }
+        .course-card:hover { border-color: var(--primary-color); transform: translateY(-5px); }
+        .course-card h4 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .course-card ul { list-style: square inside; margin-bottom: 1rem; }
+        .course-card ul li { color: var(--text-main); margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Wide overhead shot of an incredibly diverse makerspace lab. Tables are filled with architectural drafts, neon wireframes, clay maquettes, and high-end digital drawing tablets. Dynamic angle. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Academic Programs</h2>
+            <p class="subtitle" style="max-width: 800px; margin: 0 auto;">With 30 undergraduate majors, 15 specialized graduate programs, and our flagship PhD in Creativity, we offer unparalleled rigorous training for the vanguard of the next artistic epoch.</p>
+        </section>
+
+        <section class="courses-grid">
+            <div class="course-card">
+                <h4>School of Fine Arts</h4>
+                <ul>
+                    <li>Painting & Mixed Media</li>
+                    <li>Sculpture & Spatial Practices</li>
+                    <li>Digital Fabrication</li>
+                    <li>Art History & Curation</li>
+                </ul>
+                <p style="color:var(--text-muted); font-size:0.9rem;">From classical master techniques to post-modern digital installations.</p>
+            </div>
+            <div class="course-card">
+                <h4>Design & Architecture</h4>
+                <ul>
+                    <li>Graphic & Interactive Design</li>
+                    <li>Architectural Theory</li>
+                    <li>Industrial Design</li>
+                    <li>Urban UI/UX Ecosystems</li>
+                </ul>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Mold physical and digital landscapes that change human behavior.</p>
+            </div>
+            <div class="course-card">
+                <h4>School of Performing Arts</h4>
+                <ul>
+                    <li>Contemporary Choreography</li>
+                    <li>Method Acting & Directing</li>
+                    <li>Music Theory & Production</li>
+                    <li>Theatrical Rigging & Lighting</li>
+                </ul>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Perform on our expansive 1,200-seat avant-garde mainstage.</p>
+            </div>
+            <div class="course-card">
+                <h4>Film & Digital Media</h4>
+                <ul>
+                    <li>Cinematography</li>
+                    <li>VFX & 3D Animation</li>
+                    <li>Game Design & Coding</li>
+                    <li>Screenplay & Creative Writing</li>
+                </ul>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Tell stories globally with access to high-end virtual production sets.</p>
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="apply.html" class="submit-btn" style="text-decoration:none; display:inline-block; max-width: 300px;">Begin Application</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

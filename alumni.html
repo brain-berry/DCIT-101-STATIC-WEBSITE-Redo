@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Success | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .alumni-card { background: var(--surface-color); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow); transition: transform 0.3s; }
+        .alumni-card:hover { transform: translateY(-5px); }
+        .alumni-card h4 { color: var(--primary-color); font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .alumni-card span { font-size: 0.9rem; color: var(--accent-color); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .alumni-card p { margin-top: 1rem; color: var(--text-main); font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Ultra-realistic portrait of an award-winning cinematographer holding a golden award, standing confidently in front of out-of-focus studio lights. Deep moody tones, high contrast. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Where They Are Now</h2>
+            <p class="subtitle">Our alumni don't just enter industries—they disrupt them. Read the case studies of DUC graduates leading the creative revolution globally.</p>
+        </section>
+
+        <section class="alumni-grid">
+            <div class="alumni-card">
+                <!-- IMAGE CONCEPT: High-res headshot of a young professional woman in a sleek tech office holding a tablet. -->
+                <span>Class of 2018 | UI/UX</span>
+                <h4>Sarah Jenkins</h4>
+                <p>"DUC taught me that code is just another canvas. The interdisciplinary approach allowed me to combine fine arts logic with software engineering, directly leading to my role as Lead Product Designer at a Fortune 500 tech firm."</p>
+            </div>
+            <div class="alumni-card">
+                <!-- IMAGE CONCEPT: High-res shot of a male film director on set, pointing decisively at the camera rig. -->
+                <span>Class of 2015 | Film</span>
+                <h4>Marcus Thorne</h4>
+                <p>"The gritty, collaborative campus of Downtown University pushed me out of my comfort zone. The critique sessions were rigorous, which prepared me to successfully direct my first feature-length film that swept the Sundance awards this year."</p>
+            </div>
+            <div class="alumni-card">
+                <!-- IMAGE CONCEPT: High-res photo of a woman standing proudly next to a massive bronze abstract sculpture in a modern art gallery. -->
+                <span>Class of 2021 | Fine Arts</span>
+                <h4>Elena Rossi</h4>
+                <p>"The studio space and access to professional-grade material grants were unparalleled. Within a year of graduating, I secured a residency in Berlin and had my sculptures displayed at MOMA. DUC gives you the infrastructure to dream huge."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition & Aid | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .pricing-table { width: 100%; border-collapse: collapse; margin-top: 2rem; background: var(--surface-color); box-shadow: var(--shadow); border-radius: var(--radius); overflow: hidden; }
+        .pricing-table th, .pricing-table td { padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color); color: var(--text-main); }
+        .pricing-table th { background: var(--primary-color); color: white; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .pricing-table tr:last-child td { border-bottom: none; }
+        .pricing-table tr:hover td { background: var(--bg-color); }
+        .pricing-highlight { font-weight: 800; color: var(--primary-color); font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Abstract extreme close-up of a bronze coin spinning beautifully on a marble table with dramatic warm lighting, representing investment. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Tuition & Affordability</h2>
+            <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Investing in your creativity is an investment in the future. We believe that financial constraints should never extinguish absolute brilliance. Discover our flexible tuition rates and financial aid options below.</p>
+        </section>
+
+        <section style="overflow-x: auto;">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Enrollment Type</th>
+                        <th>Semester Cost</th>
+                        <th>Annual Total</th>
+                        <th>Includes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Undergraduate (Full-Time)</strong></td>
+                        <td class="pricing-highlight">$22,500</td>
+                        <td>$45,000</td>
+                        <td>Tuition, Studio Lab Fees, 24/7 Campus Access, Core Software Licenses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Undergraduate (Part-Time)</strong></td>
+                        <td class="pricing-highlight">$1,500 / credit</td>
+                        <td>Varies</td>
+                        <td>Flexible class selection, Core Software Licenses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Graduate / Masters</strong></td>
+                        <td class="pricing-highlight">$28,000</td>
+                        <td>$56,000</td>
+                        <td>Tuition, Private Atelier Studio Space, Dedicated Mentorship, Material Grants</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PhD in Creativity</strong></td>
+                        <td class="pricing-highlight">Fully Funded</td>
+                        <td>Fully Funded</td>
+                        <td>Waitlisted highly-selective program. Includes living stipend and research grants.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Room & Board (Atelier Residences)</strong></td>
+                        <td class="pricing-highlight">$8,500</td>
+                        <td>$17,000</td>
+                        <td>Premium Suite, Meal Plan, High-Speed Creative Network, On-site Labs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div style="margin-top: 3rem; text-align: center;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">Did you know? Over 85% of our students receive some form of financial support.</p>
+            <a href="scholarships.html" class="submit-btn" style="text-decoration:none; display:inline-block; max-width: 300px; background-color: var(--accent-color);">View Scholarships</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

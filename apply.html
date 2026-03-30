@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Portal | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .portal-container { background: var(--surface-color); padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow); max-width: 900px; margin: 2rem auto; }
+        .step-indicator { display: flex; justify-content: space-between; margin-bottom: 3rem; position: relative; }
+        .step-indicator::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 3px; background: var(--border-color); z-index: 1; transform: translateY(-50%); }
+        .step { background: var(--surface-color); border: 3px solid var(--border-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 2; font-weight: 800; color: var(--text-muted); }
+        .step.active { border-color: var(--primary-color); color: var(--primary-color); box-shadow: 0 0 0 5px rgba(139,0,0,0.1); }
+        .step-label { position: absolute; top: 50px; font-size: 0.8rem; color: var(--text-main); font-weight: 600; width: 100px; text-align: center; transform: translateX(-30px); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Very high key, clean, brightly lit photo of an open portfolio notebook, showing beautiful architectural sketches. A glowing digital tablet sits alongside it. Focus is crystal clear. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Commence Your Journey</h2>
+            <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Create an account in our digital admissions portal to begin submitting your academic history, essays, and digital arts portfolio.</p>
+        </section>
+
+        <section class="portal-container">
+            <div class="step-indicator">
+                <div class="step active">1<span class="step-label">Account</span></div>
+                <div class="step">2<span class="step-label">Background</span></div>
+                <div class="step">3<span class="step-label">Portfolio URL</span></div>
+                <div class="step">4<span class="step-label">Review</span></div>
+            </div>
+
+            <form action="#" class="inquiry-form" style="max-width: 100%;">
+                <h3 style="color:var(--primary-color); margin-bottom: 1.5rem; text-align: center;">Step 1: Account Setup</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--text-main);">Legal First Name</label>
+                        <input type="text" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--text-main);">Legal Last Name</label>
+                        <input type="text" name="lastname" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--text-main);">Application Email</label>
+                        <input type="email" name="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--text-main);">Intended Degree Level</label>
+                        <select name="level" required>
+                            <option value="undergrad">Undergraduate (BFA / BA)</option>
+                            <option value="grad">Graduate (MFA / MA)</option>
+                            <option value="phd">Doctorate (PhD)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 1.5rem;">
+                    <button type="submit" class="submit-btn" style="padding: 16px; font-size: 1.2rem;">Create Portal Account &rarr;</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

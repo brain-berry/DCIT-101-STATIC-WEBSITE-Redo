@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Forms | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .forms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 2rem auto; }
+        .form-card { background: var(--surface-color); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; transition: var(--transition); box-shadow: var(--shadow); }
+        .form-card:hover { border-color: var(--primary-color); transform: translateY(-3px); }
+        .form-info h4 { color: var(--text-main); margin-bottom: 0.25rem; font-size: 1.1rem; }
+        .form-info p { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+        .download-btn { background: var(--bg-color); color: var(--primary-color); border: 2px solid var(--primary-color); padding: 10px 16px; border-radius: var(--radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .download-btn:hover { background: var(--primary-color); color: white; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Minimalist desk flat-lay. A sleek laptop, a steaming cup of coffee, and clean, modern application papers with neat topography resting next to a stylus. Corporate yet highly creative vibes. -->
+            <h2 id="msg" style="font-size: 2.5rem;">Document Center</h2>
+            <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Everything you need to complete your admission profile, apply for special grants, or submit an appeal. Download the required PDF packets below.</p>
+        </section>
+
+        <section class="forms-grid">
+            <div class="form-card">
+                <div class="form-info">
+                    <h4>Undergraduate Application PDF</h4>
+                    <p>For Spring/Fall 2026/2027 Admission</p>
+                </div>
+                <button class="download-btn" onclick="alert('Downloading Document...')">Download</button>
+            </div>
+            <div class="form-card">
+                <div class="form-info">
+                    <h4>Graduate & MA Packet</h4>
+                    <p>Includes specific thesis proposal guidelines.</p>
+                </div>
+                <button class="download-btn" onclick="alert('Downloading Document...')">Download</button>
+            </div>
+            <div class="form-card">
+                <div class="form-info">
+                    <h4>International Student Addendum</h4>
+                    <p>Visa mapping and global residency proof.</p>
+                </div>
+                <button class="download-btn" onclick="alert('Downloading Document...')">Download</button>
+            </div>
+            <div class="form-card">
+                <div class="form-info">
+                    <h4>Portfolio Review Checklist</h4>
+                    <p>A step-by-step guide for artists.</p>
+                </div>
+                <button class="download-btn" onclick="alert('Downloading Document...')">Download</button>
+            </div>
+            <div class="form-card">
+                <div class="form-info">
+                    <h4>Medical & Housing Waiver</h4>
+                    <p>For guaranteed Atelier housing consideration.</p>
+                </div>
+                <button class="download-btn" onclick="alert('Downloading Document...')">Download</button>
+            </div>
+        </section>
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="color:var(--text-main); margin-bottom: 1rem;">Prefer to do it purely digital? Skip the PDFs and apply directly inside the browser.</p>
+            <a href="apply.html" class="submit-btn" style="text-decoration:none; display:inline-block; max-width: 300px;">Go To Digital Portal</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

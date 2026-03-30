@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown University College | Ignite Your Creative Future</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <!-- IMAGE CONCEPT: Ultra-realistic, minimalistic geometric logo of 'DUC' in deep maroon/crimson metal, reflecting soft warm light. -->
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="courses.html" class="dropbtn">Inquire</a>
+                <div class="dropdown-content">
+                    <a href="courses.html">Programs & Courses</a>
+                    <a href="fees.html">Tuition & Aid</a>
+                    <a href="environment.html">Campus Culture</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="visit.html" class="dropbtn">Visit</a>
+                <div class="dropdown-content">
+                    <a href="visit.html">Schedule a Tour</a>
+                    <a href="tour.html">360 Virtual Tour</a>
+                    <a href="alumni.html">Alumni Success</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="apply.html" class="dropbtn">Apply</a>
+                <div class="dropdown-content">
+                    <a href="apply.html">Start Application</a>
+                    <a href="download.html">Download Forms</a>
+                    <a href="scholarships.html">Scholarships</a>
+                </div>              
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero content-wrapper">
+            <!-- IMAGE CONCEPT: Wide-angle, cinematic shot of a modern, sun-drenched university courtyard. Diverse students are enthusiastically collaborating on a large canvas and digital tablets. Soft lens flare, golden hour lighting, vibrant and dynamic color grading. -->
+            <h2 id="msg">Shape the Future of Creativity</h2>
+            <p class="subtitle" style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: var(--text-main);">Join a community of visionaries, rule-breakers, and innovators. Downtown University College isn't just a school—it's an incubator for your boundless imagination.</p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="content-wrapper">
+                <h3>Our Audacious Mission</h3>
+                <p>At Downtown University College, we believe that human creativity is the most potent force on the planet. For over 141 years, we have cultivated an environment where raw talent transforms into revolutionary impact. We don't just teach the arts; we redefine them.</p>
+                <p>Since elevating to full university status in 1987, we have pioneered the intersection of traditional grit and futuristic media. Our campus pulsates with the energy of <strong>30 undergraduate arts majors</strong>, <strong>15 specialized graduate programs</strong>, and the nation’s absolute first <strong>PhD program in Creativity</strong>.</p>
+            </div>
+            <div class="content-wrapper">
+                <h3>Why Choose UTown?</h3>
+                <p>Where you learn matters. Positioned brilliantly in the heart of Philadelphia's Avenue of the Arts, DUC provides a dynamic, borderless learning environment. Here, a filmmaker, an architectural designer, and a sound engineer don't just share a campus; they share ideas, projects, and visions.</p>
+                <p>Our tight-knit cohort of 1,500 students guarantees personalized mentorship from world-class faculty. Your canvas is waiting. Are you ready to leave your mark?</p>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h3>Life In Motion</h3>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">A glimpse into the daily pulse of our creative sanctuaries.</p>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <!-- IMAGE CONCEPT: High-definition action shot. A diverse group of theatre students in mid-performance under dramatic stage lighting. High contrast, visceral and energetic. -->
+                    <img src="images/student life.jpg" alt="Student diversity" onerror="this.src='https://via.placeholder.com/400x300?text=Collaboration'">
+                    <div class="desc"><strong>Diversity & Collaboration</strong><br>Where perspectives collide and synthesize.</div>
+                </div>
+                <div class="gallery-card">
+                    <!-- IMAGE CONCEPT: Close-up macro photo of a photography student adjusting the lens of a vintage medium format camera. Shallow depth of field, warm cinematic lighting, ultra-sharp details on the glass lens. -->
+                    <img src="images/terre.jpg" alt="Photography" onerror="this.src='https://via.placeholder.com/400x300?text=Visual+Arts'">
+                    <div class="desc"><strong>Visual Arts & Photography</strong><br>Capturing the world from unseen angles.</div>
+                </div>
+                <div class="gallery-card">
+                    <!-- IMAGE CONCEPT: Ultra-realistic freeze-frame of a contemporary dancer mid-leap in a spacious, sunlit studio with hardwood floors. Crisp shadows, feeling of weightlessness. -->
+                    <img src="images/dance-winter.jpg" alt="Dance group" onerror="this.src='https://via.placeholder.com/400x300?text=Movement'">
+                    <div class="desc"><strong>Movement & Choreography</strong><br>Expressing the profound through the physical.</div>
+                </div>
+                <div class="gallery-card">
+                    <!-- IMAGE CONCEPT: Overhead shot of an architecture/fine arts student's messy desk. Hands are visible sketching a surreal portrait with charcoal. Rich textures, moody atmospheric lighting. -->
+                    <img src="images/Painting.jpg" alt="Painting" onerror="this.src='https://via.placeholder.com/400x300?text=Fine+Arts'">
+                    <div class="desc"><strong>Fine Arts & Design</strong><br>Summoning masterpieces into existence.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="admissions">
+            <div class="contact-info">
+                <h2>Take the Leap</h2>
+                <p>Ready to ignite your potential? Reach out to our admissions team to explore scholarships, financial aid, and portfolio reviews.</p>
+            </div>
+            
+            <div class="form-container">
+                <form action="#" class="inquiry-form">
+                    <div class="form-group">
+                        <select name="occupation" required>
+                            <option value="" disabled selected>Are you a prospective student?</option>
+                            <option value="yes">Yes, I am a High School Student / Transfer</option>
+                            <option value="parent">No, I am a Parent or Guardian</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="firstname" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastname" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="mail" placeholder="Email Address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="programme" required>
+                            <option value="" disabled selected>Select Your Creative Discipline</option>
+                            <option value="creative-writing">Creative Writing & Literature</option>
+                            <option value="dance">Contemporary Dance</option>
+                            <option value="animations">3D Animation & VFX</option>
+                            <option value="film">Cinematography & Film</option>
+                            <option value="music">Music Production & Theory</option>
+                            <option value="fine-arts">Fine Arts & Sculpting</option>
+                            <option value="technology">Creative Coding & UI/UX</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="padding: 16px; font-size: 1.2rem;">Request Information Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

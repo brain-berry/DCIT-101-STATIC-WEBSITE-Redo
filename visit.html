@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Tour | Downtown University College</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
+                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
+                <h1>Downtown University College</h1>
+            </a>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="dropdown"><a href="courses.html" class="dropbtn">Inquire</a><div class="dropdown-content"><a href="courses.html">Programs & Courses</a><a href="fees.html">Tuition & Aid</a><a href="environment.html">Campus Culture</a><a href="faq.html">FAQ</a></div></li>
+            <li class="dropdown"><a href="visit.html" class="dropbtn">Visit</a><div class="dropdown-content"><a href="visit.html">Schedule a Tour</a><a href="tour.html">360 Virtual Tour</a><a href="alumni.html">Alumni Success</a></div></li>
+            <li class="dropdown"><a href="apply.html" class="dropbtn">Apply</a><div class="dropdown-content"><a href="apply.html">Start Application</a><a href="download.html">Download Forms</a><a href="scholarships.html">Scholarships</a></div></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" style="border-bottom:none; padding-bottom:1rem; margin-bottom:1rem;">
+            <!-- IMAGE CONCEPT: Ultra-realistic tracking shot perspective walking through large glass sliding doors into a breathtakingly modern, sunlit university lobby. People are bustling, artwork lines the walls. Highly inviting. -->
+            <h2 id="msg" style="font-size: 2.5rem;">See It To Believe It</h2>
+            <p class="subtitle" style="max-width: 800px; margin: 0 auto;">Nothing compares to experiencing the raw energy of our creative sanctuary in person. Schedule a personalized, student-led tour of Downtown University College today.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2 style="font-size: 1.8rem; color: var(--primary-color);">Book Your Campus Tour</h2>
+                <p>Tours depart thrice daily at 10 AM, 1 PM, and 4 PM from the Admissions Atrium. Families welcome.</p>
+            </div>
+            
+            <div class="form-container">
+                <form action="#" class="inquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="firstname" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastname" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" name="mail" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Mobile Number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="tour-type" required>
+                            <option value="" disabled selected>Select Tour Type</option>
+                            <option value="general">General Campus Tour (1.5 Hours)</option>
+                            <option value="fine-arts">Deep Dive: Fine Arts & Studios (2 Hours)</option>
+                            <option value="film-media">Deep Dive: Film & Sound Stages (2 Hours)</option>
+                            <option value="parent">Parent/Guardian Q&A Specific Tour (1 Hour)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" required style="width:100%; padding:12px; border:1px solid var(--border-color); border-radius:var(--radius); background:var(--bg-color); color:var(--text-main);">
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="padding: 16px; font-size: 1.2rem;">Reserve Your Spot</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html#about">Our Mission</a>
+            <a href="courses.html">Academics</a>
+            <a href="testimonials.html">Student Voices</a>
+            <a href="alumni.html">Alumni Network</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mailto:admissions@downtown.edu">Contact Admissions</a>
+        </div>
+        <p>&copy; 2026 Downtown University College. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
