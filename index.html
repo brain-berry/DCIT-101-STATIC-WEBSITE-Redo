@@ -4,101 +4,668 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Downtown University College | Ignite Your Creative Future</title>
+    <meta name="description" content="Join Downtown University College - Where creativity meets innovation. 30+ arts majors, pioneering graduate programs, and a thriving creative community in Philadelphia.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hero-about-styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="index.html" style="display:flex; align-items:center; gap:15px; text-decoration:none;">
-                <!-- IMAGE CONCEPT: Ultra-realistic, minimalistic geometric logo of 'DUC' in deep maroon/crimson metal, reflecting soft warm light. -->
-                <img src="images/Downtown.jpg" alt="Downtown University Logo" onerror="this.src='https://via.placeholder.com/150x100?text=Logo'">
-                <h1>Downtown University College</h1>
-            </a>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NEW MODERN HEADER WITH GLASSMORPHISM -->
+    <!-- ⭐ NEW MODERN HEADER WITH GLASSMORPHISM -->
+    <header class="header-modern" id="header">
+        <div class="header-wrapper">
+            <!-- Logo -->
+            <div class="logo-modern">
+                <a href="index.html" class="logo-link">
+                    
+                    <div class="logo-img-wrapper">
+                        <img src="images/Downtown.jpg" alt="Downtown University College" onerror="this.src='https://via.placeholder.com/60x60/8B0000/FFFFFF?text=DUC'">
+                    </div>
+                    <div class="logo-text-wrapper">
+                        <span class="logo-main">Downtown</span>
+                        <span class="logo-sub">University College</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-modern" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span>Inquire</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="mega-dropdown">
+                            <div class="dropdown-grid">
+                                <a href="courses.html" class="dropdown-item">
+                                    <div class="item-icon">📚</div>
+                                    <div class="item-content">
+                                        <h4>Programs & Courses</h4>
+                                        <p>Explore 30+ creative majors</p>
+                                    </div>
+                                </a>
+                                <a href="fees.html" class="dropdown-item">
+                                    <div class="item-icon">💰</div>
+                                    <div class="item-content">
+                                        <h4>Tuition & Aid</h4>
+                                        <p>Financial support options</p>
+                                    </div>
+                                </a>
+                                <a href="environment.html" class="dropdown-item">
+                                    <div class="item-icon">🎨</div>
+                                    <div class="item-content">
+                                        <h4>Campus Culture</h4>
+                                        <p>Experience our community</p>
+                                    </div>
+                                </a>
+                                <a href="faq.html" class="dropdown-item">
+                                    <div class="item-icon">❓</div>
+                                    <div class="item-content">
+                                        <h4>FAQ</h4>
+                                        <p>Get answers quickly</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span>Visit</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div class="mega-dropdown">
+                            <div class="dropdown-grid">
+                                <a href="visit.html" class="dropdown-item">
+                                    <div class="item-icon">📅</div>
+                                    <div class="item-content">
+                                        <h4>Schedule a Tour</h4>
+                                        <p>Visit us in person</p>
+                                    </div>
+                                </a>
+                                <a href="tour.html" class="dropdown-item">
+                                    <div class="item-icon">🔄</div>
+                                    <div class="item-content">
+                                        <h4>360 Virtual Tour</h4>
+                                        <p>Explore from anywhere</p>
+                                    </div>
+                                </a>
+                                <a href="alumni.html" class="dropdown-item">
+                                    <div class="item-icon">🌟</div>
+                                    <div class="item-content">
+                                        <h4>Alumni Success</h4>
+                                        <p>Stories that inspire</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#admissions" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="theme-toggle-modern" id="themeBtn" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <a href="apply.html" class="cta-btn-header">
+                    <span>Apply Now</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <button class="theme-toggle" id="themeBtn" aria-label="Toggle Dark Mode">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            <span class="theme-text">Dark Mode</span>
-        </button>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="courses.html" class="mobile-nav-link">Programs & Courses</a>
+                <a href="fees.html" class="mobile-nav-link">Tuition & Aid</a>
+                <a href="environment.html" class="mobile-nav-link">Campus Culture</a>
+                <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                <a href="visit.html" class="mobile-nav-link">Schedule a Tour</a>
+                <a href="tour.html" class="mobile-nav-link">360 Virtual Tour</a>
+                <a href="alumni.html" class="mobile-nav-link">Alumni Success</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#admissions" class="mobile-nav-link">Contact</a>
+                <a href="apply.html" class="mobile-nav-link featured">Apply Now</a>
+            </div>
+        </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="courses.html" class="dropbtn">Inquire</a>
-                <div class="dropdown-content">
-                    <a href="courses.html">Programs & Courses</a>
-                    <a href="fees.html">Tuition & Aid</a>
-                    <a href="environment.html">Campus Culture</a>
-                    <a href="faq.html">FAQ</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="visit.html" class="dropbtn">Visit</a>
-                <div class="dropdown-content">
-                    <a href="visit.html">Schedule a Tour</a>
-                    <a href="tour.html">360 Virtual Tour</a>
-                    <a href="alumni.html">Alumni Success</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="apply.html" class="dropbtn">Apply</a>
-                <div class="dropdown-content">
-                    <a href="apply.html">Start Application</a>
-                    <a href="download.html">Download Forms</a>
-                    <a href="scholarships.html">Scholarships</a>
-                </div>              
-            </li>
-        </ul>
-    </nav>
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        <!-- ⭐ FULL-PAGE HERO SECTION WITH BACKGROUND IMAGE -->
+        <section class="hero-fullpage">
+            <!-- Background Image with Overlay -->
+            <div class="hero-background">
+                <img src="https://picsum.photos/seed/downtown-university-campus/1920/1080.jpg" 
+                     alt="Downtown University College Campus" 
+                     class="hero-bg-image"
+                     onerror="this.src='https://via.placeholder.com/1920x1080/8B0000/FFFFFF?text=Downtown+University+Campus'">
+                <div class="hero-overlay"></div>
+            </div>
 
-    <main>
-        <section class="hero content-wrapper">
-            <!-- IMAGE CONCEPT: Wide-angle, cinematic shot of a modern, sun-drenched university courtyard. Diverse students are enthusiastically collaborating on a large canvas and digital tablets. Soft lens flare, golden hour lighting, vibrant and dynamic color grading. -->
-            <h2 id="msg">Shape the Future of Creativity</h2>
-            <p class="subtitle" style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: var(--text-main);">Join a community of visionaries, rule-breakers, and innovators. Downtown University College isn't just a school—it's an incubator for your boundless imagination.</p>
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>141 Years of Excellence • Philadelphia's Premier Arts College</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Shape the Future of
+                    <span class="gradient-text">Creativity</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Join a community of <strong>visionaries, rule-breakers, and innovators</strong>. 
+                    Downtown University College isn't just a school—it's an incubator for your boundless imagination.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="apply.html" class="btn-primary">
+                        <span>Start Your Journey</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="tour.html" class="btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Arts Majors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Graduate Programs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">PhD in Creativity</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,500</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
         </section>
 
-        <section class="about" id="about">
+        <!-- MODERN ABOUT SECTION -->
+        <section class="about-modern" id="about">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">🎯</span>
+                    <span>About DUC</span>
+                </div>
+                <h2 class="section-title">Our Audacious Mission</h2>
+                <p class="section-subtitle">Where creativity meets innovation for over 141 years</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-grid">
+                    <!-- Mission Column -->
+                    <div class="about-column">
+                        <div class="about-icon">🚀</div>
+                        <h3>Transforming Talent</h3>
+                        <p>At Downtown University College, we believe human creativity is the most potent force on the planet. For over 141 years, we've cultivated an environment where raw talent transforms into revolutionary impact.</p>
+                        <p>We don't just teach the arts; we <strong>redefine them</strong> through innovative approaches and cutting-edge technology.</p>
+                    </div>
+
+                    <!-- Programs Column -->
+                    <div class="about-column">
+                        <div class="about-icon">🎓</div>
+                        <h3>Pioneering Education</h3>
+                        <p>Since elevating to full university status in 1987, we've pioneered the intersection of traditional grit and futuristic media.</p>
+                        <div class="program-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-number">30+</span>
+                                <span class="highlight-text">Undergraduate Arts Majors</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">15+</span>
+                                <span class="highlight-text">Specialized Graduate Programs</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">1st</span>
+                                <span class="highlight-text">PhD in Creativity Program</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Column -->
+                    <div class="about-column">
+                        <div class="about-icon">🏛️</div>
+                        <h3>Why Choose DUC?</h3>
+                        <p>Positioned brilliantly in the heart of Philadelphia's Avenue of the Arts, DUC provides a dynamic, borderless learning environment.</p>
+                        <p>Here, a filmmaker, an architectural designer, and a sound engineer don't just share a campus—they share <strong>ideas, projects, and visions</strong>.</p>
+                        <div class="location-advantage">
+                            <span class="advantage-tag">📍 Philadelphia's Arts District</span>
+                            <span class="advantage-tag">👥 1,500 Students</span>
+                            <span class="advantage-tag">🎨 World-Class Faculty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="about-cta">
+                    <h3>Your Canvas is Waiting</h3>
+                    <p>Are you ready to leave your mark on the world of creativity?</p>
+                    <div class="cta-buttons">
+                        <a href="apply.html" class="btn-primary">Start Your Application</a>
+                        <a href="tour.html" class="btn-secondary">Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⭐ EXPANDED GALLERY SECTION (9 PHOTOS) -->
+        <section class="gallery-section-enhanced" id="gallery">
+            <div class="section-header-centered">
+                <div class="section-badge">
+                    <span class="badge-icon">📸</span>
+                    <span>Campus Life</span>
+                </div>
+                <h3 class="section-title-alt">Life In Motion</h3>
+                <p class="section-subtitle">A glimpse into the daily pulse of our creative sanctuaries.</p>
+            </div>
+
+            <div class="gallery-grid-masonry">
+                <!-- Row 1 -->
+                <div class="gallery-card-enhanced" data-category="collaboration">
+                    <!-- 📌 PLACEHOLDER 1: Student collaboration image -->
+                    <img src="images/student life.jpg" alt="Student diversity and collaboration" onerror="this.src='https://via.placeholder.com/600x400/8B0000/FFFFFF?text=Collaboration'">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Community</span>
+                            <h4>Diversity & Collaboration</h4>
+                            <p>Where perspectives collide and synthesize</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced" data-category="visual-arts">
+                    <!-- 📌 PLACEHOLDER 2: Photography/Visual Arts -->
+                    <img src="images/terre.jpg" alt="Photography and visual arts" onerror="this.src='https://via.placeholder.com/600x400/8B0000/FFFFFF?text=Visual+Arts'">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Visual Arts</span>
+                            <h4>Photography Excellence</h4>
+                            <p>Capturing the world from unseen angles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced" data-category="dance">
+                    <!-- 📌 PLACEHOLDER 3: Dance/Movement -->
+                    <img src="images/dance-winter.jpg" alt="Dance and choreography" onerror="this.src='https://via.placeholder.com/600x400/8B0000/FFFFFF?text=Movement'">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Movement</span>
+                            <h4>Choreography Studio</h4>
+                            <p>Expressing the profound through physicality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="gallery-card-enhanced" data-category="fine-arts">
+                    <!-- 📌 PLACEHOLDER 4: Painting/Fine Arts -->
+                    <img src="images/Painting.jpg" alt="Fine arts and painting" onerror="this.src='https://via.placeholder.com/600x400/8B0000/FFFFFF?text=Fine+Arts'">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Fine Arts</span>
+                            <h4>Fine Arts & Design</h4>
+                            <p>Summoning masterpieces into existence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced tall" data-category="music">
+                    <!-- 📌 PLACEHOLDER 5: Music Production/Recording Studio -->
+                    <img src="images/music_prod.png" alt="Music production studio">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Music</span>
+                            <h4>Music Production Lab</h4>
+                            <p>Industry-standard recording facilities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced" data-category="technology">
+                    <!-- 📌 PLACEHOLDER 6: Creative Coding/UI Design -->
+                    <img src="images/UIUX.png" alt="Creative coding and UI/UX">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Technology</span>
+                            <h4>Creative Coding Lab</h4>
+                            <p>Where code meets creativity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="gallery-card-enhanced wide" data-category="film">
+                    <!-- 📌 PLACEHOLDER 7: Film/Cinematography -->
+                    <img src="images/film.png" alt="Film and cinematography">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Film</span>
+                            <h4>Cinematography Studio</h4>
+                            <p>Professional film production equipment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced" data-category="performance">
+                    <!-- 📌 PLACEHOLDER 8: Theater/Performance Arts -->
+                    <img src="images/theater.png" alt="Theater and performance arts">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Performance</span>
+                            <h4>Theater & Performance</h4>
+                            <p>State-of-the-art stage facilities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-card-enhanced" data-category="architecture">
+                    <!-- 📌 PLACEHOLDER 9: Architecture/Design Studio -->
+                    <img src="images/studio-design.png" alt="Architecture and design">
+                    <div class="gallery-overlay-enhanced">
+                        <div class="overlay-content">
+                            <span class="category-tag">Design</span>
+                            <h4>Architecture Workshop</h4>
+                            <p>Innovative design thinking spaces</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="gallery-cta-center">
+                <a href="gallery.html" class="btn-glass tertiary">
+                    <span>View Complete Gallery</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SLIDER -->
+        <section class="testimonials-section" id="testimonials">
             <div class="content-wrapper">
-                <h3>Our Audacious Mission</h3>
-                <p>At Downtown University College, we believe that human creativity is the most potent force on the planet. For over 141 years, we have cultivated an environment where raw talent transforms into revolutionary impact. We don't just teach the arts; we redefine them.</p>
-                <p>Since elevating to full university status in 1987, we have pioneered the intersection of traditional grit and futuristic media. Our campus pulsates with the energy of <strong>30 undergraduate arts majors</strong>, <strong>15 specialized graduate programs</strong>, and the nation’s absolute first <strong>PhD program in Creativity</strong>.</p>
+                <div class="section-header" data-fade-in>
+                    <div class="section-badge">
+                        <span class="badge-icon">💬</span>
+                        <span>Student Voices</span>
+                    </div>
+                    <h3 class="section-title-alt">What Our Students Say</h3>
+                    <p class="section-subtitle">Real stories from the creative minds shaping their futures at DUC</p>
+                </div>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider" id="testimonialSlider">
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">"</div>
+                                <p class="testimonial-text">Downtown University College transformed my raw passion for film into a viable career. The mentorship here is unparalleled—professors treat you like colleagues, not just students.</p>
+                                <div class="testimonial-author">
+                                    <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Chen">
+                                    <div class="author-info">
+                                        <h4>Sarah Chen</h4>
+                                        <p>Cinematography Major, Class of 2024</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">"</div>
+                                <p class="testimonial-text">The interdisciplinary approach here is what sets DUC apart. I'm a music production major, but I've collaborated with dancers, filmmakers, and visual artists. That's real-world preparation.</p>
+                                <div class="testimonial-author">
+                                    <img src="https://i.pravatar.cc/100?img=13" alt="Marcus Rodriguez">
+                                    <div class="author-info">
+                                        <h4>Marcus Rodriguez</h4>
+                                        <p>Music Production & Theory, Class of 2025</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">"</div>
+                                <p class="testimonial-text">Being in Philadelphia's Avenue of the Arts means opportunities are literally outside your door. I've interned at three major galleries before even graduating.</p>
+                                <div class="testimonial-author">
+                                    <img src="https://i.pravatar.cc/100?img=5" alt="Aisha Patel">
+                                    <div class="author-info">
+                                        <h4>Aisha Patel</h4>
+                                        <p>Fine Arts & Sculpting, Class of 2023</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">"</div>
+                                <p class="testimonial-text">The Creative Coding program here is cutting-edge. I landed a UI/UX internship at a Fortune 500 company in my sophomore year thanks to the portfolio I built at DUC.</p>
+                                <div class="testimonial-author">
+                                    <img src="https://i.pravatar.cc/100?img=33" alt="Jordan Kim">
+                                    <div class="author-info">
+                                        <h4>Jordan Kim</h4>
+                                        <p>Creative Coding & UI/UX, Class of 2024</p>
+                                        <div class="rating">★★★★★</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider-btn prev-btn" id="testimonialPrev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-btn next-btn" id="testimonialNext" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="slider-indicators" id="testimonialIndicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- IMAGE CAROUSEL -->
+        <section class="carousel-section" id="campus-carousel">
             <div class="content-wrapper">
-                <h3>Why Choose UTown?</h3>
-                <p>Where you learn matters. Positioned brilliantly in the heart of Philadelphia's Avenue of the Arts, DUC provides a dynamic, borderless learning environment. Here, a filmmaker, an architectural designer, and a sound engineer don't just share a campus; they share ideas, projects, and visions.</p>
-                <p>Our tight-knit cohort of 1,500 students guarantees personalized mentorship from world-class faculty. Your canvas is waiting. Are you ready to leave your mark?</p>
+                <div class="section-header" data-fade-in>
+                    <div class="section-badge">
+                        <span class="badge-icon">📷</span>
+                        <span>Campus Showcase</span>
+                    </div>
+                    <h3 class="section-title-alt">Experience Our Creative Spaces</h3>
+                </div>
+
+                <div class="image-carousel-container">
+                    <div class="image-carousel" id="campusCarousel">
+                        <div class="carousel-slide active">
+                            <img src="images/student life.jpg" alt="Student collaboration" onerror="this.src='https://via.placeholder.com/1200x600/8B0000/FFFFFF?text=Creative+Collaboration'">
+                            <div class="carousel-caption">
+                                <h4>Collaborative Studios</h4>
+                                <p>State-of-the-art spaces designed for interdisciplinary creativity</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="images/terre.jpg" alt="Photography studio" onerror="this.src='https://via.placeholder.com/1200x600/8B0000/FFFFFF?text=Photography+Studio'">
+                            <div class="carousel-caption">
+                                <h4>Photography Labs</h4>
+                                <p>Professional-grade equipment and darkrooms</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="images/dance-winter.jpg" alt="Dance studio" onerror="this.src='https://via.placeholder.com/1200x600/8B0000/FFFFFF?text=Dance+Studio'">
+                            <div class="carousel-caption">
+                                <h4>Movement Spaces</h4>
+                                <p>Sunlit studios with sprung floors and mirrors</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="images/Painting.jpg" alt="Art studio" onerror="this.src='https://via.placeholder.com/1200x600/8B0000/FFFFFF?text=Fine+Arts+Studio'">
+                            <div class="carousel-caption">
+                                <h4>Fine Arts Workshops</h4>
+                                <p>Dedicated spaces for painting, sculpting, and mixed media</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/1200x600/8B0000/FFFFFF?text=Music+Production+Lab" alt="Music lab">
+                            <div class="carousel-caption">
+                                <h4>Music Production Labs</h4>
+                                <p>Industry-standard recording and mixing equipment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous image">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next image">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="carousel-thumbnails" id="carouselThumbnails">
+                        <div class="thumbnail active" data-slide="0">
+                            <img src="images/student life.jpg" alt="" onerror="this.src='https://via.placeholder.com/150x100/8B0000/FFFFFF?text=1'">
+                        </div>
+                        <div class="thumbnail" data-slide="1">
+                            <img src="images/terre.jpg" alt="" onerror="this.src='https://via.placeholder.com/150x100/8B0000/FFFFFF?text=2'">
+                        </div>
+                        <div class="thumbnail" data-slide="2">
+                            <img src="images/dance-winter.jpg" alt="" onerror="this.src='https://via.placeholder.com/150x100/8B0000/FFFFFF?text=3'">
+                        </div>
+                        <div class="thumbnail" data-slide="3">
+                            <img src="images/Painting.jpg" alt="" onerror="this.src='https://via.placeholder.com/150x100/8B0000/FFFFFF?text=4'">
+                        </div>
+                        <div class="thumbnail" data-slide="4">
+                            <img src="https://via.placeholder.com/150x100/8B0000/FFFFFF?text=5" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="gallery-section" id="gallery">
-            <h3>Life In Motion</h3>
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">A glimpse into the daily pulse of our creative sanctuaries.</p>
-            <div class="gallery-grid">
-                <div class="gallery-card">
-                    <!-- IMAGE CONCEPT: High-definition action shot. A diverse group of theatre students in mid-performance under dramatic stage lighting. High contrast, visceral and energetic. -->
-                    <img src="images/student life.jpg" alt="Student diversity" onerror="this.src='https://via.placeholder.com/400x300?text=Collaboration'">
-                    <div class="desc"><strong>Diversity & Collaboration</strong><br>Where perspectives collide and synthesize.</div>
-                </div>
-                <div class="gallery-card">
-                    <!-- IMAGE CONCEPT: Close-up macro photo of a photography student adjusting the lens of a vintage medium format camera. Shallow depth of field, warm cinematic lighting, ultra-sharp details on the glass lens. -->
-                    <img src="images/terre.jpg" alt="Photography" onerror="this.src='https://via.placeholder.com/400x300?text=Visual+Arts'">
-                    <div class="desc"><strong>Visual Arts & Photography</strong><br>Capturing the world from unseen angles.</div>
-                </div>
-                <div class="gallery-card">
-                    <!-- IMAGE CONCEPT: Ultra-realistic freeze-frame of a contemporary dancer mid-leap in a spacious, sunlit studio with hardwood floors. Crisp shadows, feeling of weightlessness. -->
-                    <img src="images/dance-winter.jpg" alt="Dance group" onerror="this.src='https://via.placeholder.com/400x300?text=Movement'">
-                    <div class="desc"><strong>Movement & Choreography</strong><br>Expressing the profound through the physical.</div>
-                </div>
-                <div class="gallery-card">
-                    <!-- IMAGE CONCEPT: Overhead shot of an architecture/fine arts student's messy desk. Hands are visible sketching a surreal portrait with charcoal. Rich textures, moody atmospheric lighting. -->
-                    <img src="images/Painting.jpg" alt="Painting" onerror="this.src='https://via.placeholder.com/400x300?text=Fine+Arts'">
-                    <div class="desc"><strong>Fine Arts & Design</strong><br>Summoning masterpieces into existence.</div>
+        <!-- ANIMATED STATS COUNTER -->
+        <section class="stats-counter-section" id="stats">
+            <div class="stats-overlay"></div>
+            <div class="content-wrapper">
+                <div class="stats-grid">
+                    <div class="stat-box" data-count-up>
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-number" data-target="1500">0</div>
+                        <div class="stat-label">Creative Students</div>
+                    </div>
+                    <div class="stat-box" data-count-up>
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-number" data-target="85">0</div>
+                        <div class="stat-label">Expert Faculty</div>
+                    </div>
+                    <div class="stat-box" data-count-up>
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-label">Programs Offered</div>
+                    </div>
+                    <div class="stat-box" data-count-up>
+                        <div class="stat-icon">🌍</div>
+                        <div class="stat-number" data-target="40">0</div>
+                        <div class="stat-label">Countries Represented</div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT/FORM SECTION -->
         <section class="contact-section" id="admissions">
             <div class="contact-info">
                 <h2>Take the Leap</h2>
@@ -106,7 +673,7 @@
             </div>
             
             <div class="form-container">
-                <form action="#" class="inquiry-form">
+                <form action="#" class="inquiry-form" id="inquiryForm">
                     <div class="form-group">
                         <select name="occupation" required>
                             <option value="" disabled selected>Are you a prospective student?</option>
@@ -147,12 +714,13 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="submit-btn" style="padding: 16px; font-size: 1.2rem;">Request Information Now</button>
+                    <button type="submit" class="submit-btn">Request Information Now</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-links">
             <a href="index.html#about">Our Mission</a>
